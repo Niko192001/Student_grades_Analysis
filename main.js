@@ -1,9 +1,10 @@
 
 let grades = [90, 97, 83, 68, 100, 93, 77, 59, 86, 72];
 
-let total = 0
+let total = 0 // This variable will store the sum of all grades which will be used later in the assignment
 for (let i = 0; i < grades.length; i++){
     const grade = grades[i];
+
     // I will specify the category next
     total += grade;
 
@@ -43,7 +44,7 @@ console.log("Overall Class Performance:", performance);
 console.log("Highest grade A:", highest);
 console.log ("Lowest grade F:", lowest);
 
-console.log("Average grade:", average.toFixed(2));
+console.log("Average grade:", average.toFixed(2)); //to.fixed is used to round it to two decimal insted
 
 
 
