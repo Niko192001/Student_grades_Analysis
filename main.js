@@ -1,52 +1,49 @@
-
 let grades = [90, 97, 83, 68, 100, 93, 77, 59, 86, 72];
 
 let total = 0 // This variable will store the sum of all grades which will be used later in the assignment
-for (let i = 0; i < grades.length; i++){
+for (let i = 0; i < grades.length; i++) {
     const grade = grades[i];
 
     // I will specify the category next
     total += grade;
 
     let letter;
-    if (grade >= 90){
+    if (grade >= 90) {
         letter = "A";
-    } else if (grade >= 80){
+    } else if (grade >= 80) {
         letter = "B";
-    } else if (grade >= 70){
+    } else if (grade >= 70) {
         letter = "C";
-    } else if(grade >= 60){
+    } else if (grade >= 60) {
         letter = "D";
-    }  else {
+    } else {
         letter = "F"
     }
-        console.log("Grade:", grade, "Letter:", letter);
+    console.log("Grade:", grade, "Letter:", letter);
 
 }
 // I will now find the average with the 10 grade and with the average we will also get the overall class performance
 let average = total / grades.length
 
 let performance;
-if (average >= 90){
+if (average >= 90) {
     performance = "Excellent";
-} else if (average >= 80){
+} else if (average >= 80) {
     performance = "Good";
-} else if (average >= 70){
+} else if (average >= 70) {
     performance = "Satisfactory";
 } else {
     performance = "Needs Improvement";
 }
-let highest = (Math.max (...grades))
-let lowest = (Math.min(... grades))
+let highest = (Math.max(...grades))
+let lowest = (Math.min(...grades))
 
 
 console.log("Overall Class Performance:", performance);
 console.log("Highest grade A:", highest);
-console.log ("Lowest grade F:", lowest);
+console.log("Lowest grade F:", lowest);
 
 console.log("Average grade:", average.toFixed(2)); //to.fixed is used to round it to two decimal insted
-
-
 
 
 /*
